@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Administrasi Klinik Sehat Selalu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Portal Administrasi</h1>
+            <h2>Klinik Sehat Selalu</h2>
+        </header>
+
+        <main>
+            <form id="admin-form" onsubmit="return false;">
+                <!-- Step 1: Patient Info -->
+                <fieldset>
+                    <legend>1. Informasi Pasien</legend>
+                    <label for="patient-id">Nomor Pasien</label>
+                    <input type="text" id="patient-id" name="patient-id" placeholder="Contoh: PSN001">
+                    <div id="patient-info" class="info-box" style="display: none;"></div>
+                </fieldset>
+
+                <!-- Step 2: Poli & Doctor -->
+                <fieldset>
+                    <legend>2. Poli & Dokter</legend>
+                    <label for="poli">Jenis Poli Spesialis</label>
+                    <select id="poli" name="poli">
+                        <option value="">-- Pilih Poli --</option>
+                        <option value="Umum">Umum</option>
+                        <option value="Gigi">Gigi</option>
+                        <option value="Syaraf">Syaraf</option>
+                    </select>
+
+                    <label for="doctor">Pilih Nama Dokter</label>
+                    <select id="doctor" name="doctor" disabled>
+                        <option value="">-- Pilih Dokter --</option>
+                    </select>
+                    <div id="doctor-schedule" class="info-box" style="display: none;"></div>
+                </fieldset>
+
+                <!-- Step 3: Inpatient Stay -->
+                <fieldset>
+                    <legend>3. Rawat Inap</legend>
+                    <label for="lama-inap">Lama Inap (hari)</label>
+                    <input type="number" id="lama-inap" name="lama-inap" min="0" value="0" placeholder="0">
+
+                    <label for="kamar">Jenis Kamar</label>
+                    <select id="kamar" name="kamar">
+                        <option value="Reguler">Reguler</option>
+                        <option value="Suite">Suite</option>
+                        <option value="VIP">VIP</option>
+                    </select>
+                </fieldset>
+
+                <!-- Step 4: Optional Payments -->
+                <fieldset>
+                    <legend>4. Pembayaran Opsional</legend>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="bayar-obat" name="bayar-obat">
+                        <label for="bayar-obat">Bayar Obat</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="bayar-konsultasi" name="bayar-konsultasi">
+                        <label for="bayar-konsultasi">Bayar Konsultasi</label>
+                    </div>
+                </fieldset>
+                
+                <button type="button" id="calculate-btn">Buat Ringkasan</button>
+            </form>
+
+            <!-- Step 5: Final Output -->
+            <section id="summary" class="hidden">
+                <h3>Ringkasan Pendaftaran</h3>
+                <div id="summary-content"></div>
+            </section>
+        </main>
+    </div>
+
+    <script type="importmap">
+    {
+        "imports": {}
+    }
+    </script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
+

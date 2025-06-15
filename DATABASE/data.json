@@ -1,0 +1,42 @@
+{
+    "patients": {
+        "PSN001": { "name": "MOHAMAD ZULFIKLI", "age": 45, "gender": "Laki-laki" },
+        "PSN002": { "name": "Natasya Dilah Sofiani", "age": 29, "gender": "Perempuan" },
+        "PSN003": { "name": "Fahry", "age": 14, "gender": "Laki-laki" },
+        "PSN004": { "name": "Ahmad Wijaya", "age": 62, "gender": "Laki-laki" },
+        "PSN005": { "name": "Lionel Messi", "age": 37, "gender": "Laki-laki" },
+        "PSN006": { "name": "Charles Leclerc", "age": 27, "gender": "Laki-laki" },
+        "PSN007": { "name": "Murano Sayaka", "age": 17, "gender": "Perempuan" },
+        "PSN008": { "name": "Kusunoki Tomori", "age": 25, "gender": "Perempuan" }
+    },
+    "doctors": {
+        "Umum": [
+            { "name": "Dr. Hartono", "schedule": "Senin, 10:00 - 12:00" },
+            { "name": "Dr. Indah", "schedule": "Selasa, 14:00 - 16:00" }
+        ],
+        "Gigi": [
+            { "name": "Drg. Anisa", "schedule": "Rabu, 09:00 - 11:00" },
+            { "name": "Drg. Rian", "schedule": "Jumat, 13:00 - 15:00" }
+        ],
+        "Syaraf": [
+            { "name": "Dr. Sp.S. Budiarto", "schedule": "Kamis, 11:00 - 13:00" },
+            { "name": "Dr. Sp.S. Karina", "schedule": "Sabtu, 10:00 - 12:00" }
+        ]
+    },
+    "prices": {
+        "rooms": {
+            "Reguler": 500000,
+            "Suite": 1000000,
+            "VIP": 2000000
+        },
+        "medicine": 150000,
+        "consultation": 250000
+    },
+    "discounts": {
+        "rooms": {
+            "Reguler": 0.05,
+            "Suite": 0.10,
+            "VIP": 0.15
+        }
+    }
+}
