@@ -11,7 +11,7 @@ import java.io.File;
 public class Main {
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
-            JFrame frame = new JFrame("Java GUI - Swing + JavaFX");
+            JFrame frame = new JFrame("Portal Administrasi Klinik Sehat Selalu");
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             frame.setSize(1920, 1080);
 
